@@ -20,8 +20,10 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Gradle
-        run: ./gradlew assemble
+        run: |
+          ./gradlew assemble
 
       - name: Test with Gradle
-        run: ./gradlew test
+        run: |
+          ./gradlew test
 
